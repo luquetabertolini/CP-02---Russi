@@ -7,10 +7,16 @@ sp1 = float(input('Digita a nota do SP1: '))
 sp2 = float(input('Digita a nota do SP2: '))
 gs = float(input('Digite a nota do GS: '))
 
-cp1, cp2, cp3 = sorted([cp1, cp2, cp3], reverse=True)
+menor_cp = cp1
 
-media_semestre = (cp1 + cp2 + sp1 + sp2) / 4
+if cp2 < menor_cp:
+    menor_cp = cp2
+if cp3 < menor_cp:
+    menor_cp = cp3
 
+soma_cp = cp1 + cp2 + cp3 - menor_cp
+
+media_semestre = (soma_cp + sp1 + sp2) / 4
 media_final = (media_semestre * 0.4) + (gs * 0.6)
 
 print(f'Média do semestre (sem peso): {media_semestre:.1f}')

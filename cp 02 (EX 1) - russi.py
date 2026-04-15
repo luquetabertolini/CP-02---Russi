@@ -6,7 +6,7 @@ codigo_carga = int(input('Digite o código da carga (10 a 40): '))
 
 peso_quilo = peso * 1000
 
-if codigo_carga <= 20:
+if 10 <= codigo_carga <= 20:
     preco_kg = 100
 elif codigo_carga <= 30:
     preco_kg = 250
@@ -31,6 +31,7 @@ total = preco_total + valor_imposto
 
 print(f'Peso da carga: {peso_quilo} kg')
 print(f'Preço da carga: R$ {preco_total:.2f}')
+print(f'Preço por kg: R$ {preco_kg:.2f}')
 print(f'Imposto: {imposto*100}%')
 print(f'Valor do imposto: R$ {valor_imposto:.2f}')
 print(f'Valor total: R$ {total:.2f}')

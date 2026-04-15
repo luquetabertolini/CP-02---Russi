@@ -7,15 +7,15 @@ C = float(input('Digite C: '))
 A, B, C = sorted([A, B, C], reverse=True)
 
 if A >= B + C:
-    print('NÃO FORMA TRIÂNGULO')
+    print('NAO FORMA TRIANGULO')
 else:
     if A**2 == B**2 + C**2:
-        print('TRIÂNGULO RETÂNGULO')
+        print('TRIANGULO RETANGULO')
     elif A**2 > B**2 + C**2:
-        print('TRIÂNGULO OBTUSÂNGULO')
+        print('TRIANGULO OBTUSANGULO')
     else:
-        print('TRIÂNGULO ACUTÂNGULO')
+        print('TRIANGULO ACUTANGULO')
     if A == B == C:
-        print('TRIÂNGULO EQUILÁTERO')
+        print('TRIANGULO EQUILATERO')
     elif A == B or A == C or B == C:
-        print('TRIÂNGULO ISÓSCELES')
+        print('TRIANGULO ISOSCELES')
