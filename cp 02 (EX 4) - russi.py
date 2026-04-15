@@ -1,4 +1,4 @@
-# EXERCICIO 4
+# EXERCÍCIO 4
 
 nome = input("Nome: ")
 cargo = int(input("Cargo: "))
